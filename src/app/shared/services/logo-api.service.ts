@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class LogoApiService {
-  baseUrl:string ='https//logo.clearbit.com';
+  baseUrl: string ='https//logo.clearbit.com';
 
   constructor() { }
 
