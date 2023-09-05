@@ -7,7 +7,7 @@ import {HttpClient} from "@angular/common/http";
 export class NewsApiService {
   apiKey: string ='d5cd246500eb4b149b447b618c47da9a'
   baseUrl: string= 'https://newsapi.org/v2';
-  constructor(http: HttpClient) { }
+  constructor(private http : HttpClient) { }
 
   getSources(){
     return this.http.get(`${this.baseUrl}/sources?apiKey=${this.apiKey}`);
