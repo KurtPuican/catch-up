@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./main-content.component.css']
 })
 export class MainContentComponent {
+  tittle: string='CatchUp';
+
+  @Input() articles:Array<any>=[];
 
 }
