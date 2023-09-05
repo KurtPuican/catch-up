@@ -15,7 +15,7 @@ export class NewsApiService {
   getArticlesBySourceId(sourceId:string){
     return this.http.get(`${this.baseUrl}/top-headlines?sources=${sourceId}&aoiKey=${this.apiKey}`);
   }
-  initiArticles(){
+  initArticles(){
     return this.getArticlesBySourceId('bbc-news');
   }
 }
